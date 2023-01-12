@@ -23,9 +23,9 @@ It's the libary used for field voice command .
 
 
 
-if open_main > 0:
+    if open_main > 0:
 
-        self.new_window = Toplevel(self.root)
+       self.new_window = Toplevel(self.root)
         
         self.app = face_recognition_system(self.new_window)
 
