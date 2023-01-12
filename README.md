@@ -27,6 +27,6 @@ It's the libary used for field voice command .
 
        self.new_window = Toplevel(self.root)
         
-        self.app = face_recognition_system(self.new_window)
+        self.app = add ur class name(self.new_window)
 
 
