@@ -103,7 +103,7 @@ class login_window:
         elif self.txtuser.get() == "kapu" and self.txtpass.get() == "ashu":
             messagebox.showinfo("success", "Welcome to code with ")
         else:
-            conn = mysql.connector.connect(host="localhost", user="root", password="gmg70199",
+            conn = mysql.connector.connect(host="localhost", user="root", password="ur password",
                                            database=" register ")
             cur = conn.cursor()
             cur.execute("select * from ` register1` WHERE   ` email` = %s and  ` password`=%s", (
@@ -142,7 +142,7 @@ class login_window:
         else:
             try:
 
-                conn = mysql.connector.connect(host="localhost", user="root", password="gmg70199",
+                conn = mysql.connector.connect(host="localhost", user="root", password="ur password",
                                                database=" register ")
                 cur = conn.cursor(buffered=True)
                 qury = "select * from ` register1` WHERE   ` email` = %s and ` securityq`=%s and ` securitya`=%s "
@@ -178,7 +178,7 @@ class login_window:
         if self.txtuser.get() == "":
             messagebox.showerror("Error", "Place Enter the Email to Reset Password")
         else:
-            conn = mysql.connector.connect(host="localhost", user="root", password="gmg70199",
+            conn = mysql.connector.connect(host="localhost", user="root", password="ur password",
                                            database=" register ")
             cur = conn.cursor()
             query = "select * from ` register1` WHERE   ` email` = %s"
@@ -492,7 +492,7 @@ class Register:
             else:
 
                 try:
-                    conn = mysql.connector.connect(host="localhost", user="root", password="gmg70199",
+                    conn = mysql.connector.connect(host="localhost", user="root", password="ur password",
                                                    database=" register ")
                     cur = conn.cursor()
                     cur.execute("SELECT * FROM ` register1` WHERE   ` email` = %s", (self.var_email.get(),))
