@@ -123,7 +123,7 @@ class login_window:
                 open_main = messagebox.askyesno("ALERT", "Action Only Admin")
                 if open_main > 0:
                     self.new_window = Toplevel(self.root)
-                    self.app = face_recognition_system(self.new_window)
+                    self.app = face_recognition_system(self.new_window)        #  <----------------------- on here mention the class name of the afte login
                 else:
                     if not open_main:
                         return
@@ -191,7 +191,7 @@ class login_window:
                 messagebox.showerror("Error", "Please Enter the Valid User Name")
             else:
                 conn.close()
-                self.root2 = Toplevel()
+                self.root2 = Toplevel()  # on costant the window
                 self.root2.title("Forget Password")
                 self.root2.geometry("340x450+610+170")
                 self.root2.focus_force()
